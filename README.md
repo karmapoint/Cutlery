@@ -4,7 +4,7 @@
 
 ## Background
 
-Set is an award-winning pattern recognition card game where players try to identify "sets" of three cards that meet a set of rules. Cutlery will utilize the basic premise of the game and create a version that is easy to play on web browsers (and hopefully tablets as well).
+[Set](http://bit.ly/2nm7FtW) is an award-winning pattern recognition card game where players try to identify "sets" of three cards that meet a set of rules. Cutlery will utilize the basic premise of the game and create a version that is easy to play on web browsers (and hopefully tablets as well).
 
 The deck is comprised of 81 unique cards that have four attributes:
 
@@ -84,6 +84,7 @@ The app will be composed of the following files/components:
 
 ### BONUS
   * Easy mode
+  * Progressing levels
 
   ----
 ### Cards:
