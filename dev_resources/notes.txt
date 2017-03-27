@@ -1,0 +1,141 @@
+Set:
+
+81 cards
+
+4 features:
+- number (1,2, 3)
+- symbol (diamond, squiggle, oval)
+- shading (solid, strped, outline)
+- color (red, green, purple)
+
+They all have the same number or have three different numbers.
+They all have the same symbol or have three different symbols.
+They all have the same shading or have three different shadings.
+They all have the same color or have three different colors.
+
+The rules of Set are summarized by: If you can sort a group of three cards into "two of ____ and one of ____", then it is not a set.
+
+
+Deal 12 cards...if there are no sets on the board, deal another 3.
+
+Blue
+- 1 oval, solid
+- 1 oval, pattern
+- 1 oval, outline
+- 2 oval, solid
+- 2 oval, pattern
+- 2 oval, outline
+- 3 oval, solid
+- 3 oval, pattern
+- 3 oval, outline
+- 1 diamond, solid
+- 1 diamond, pattern
+- 1 diamond, outline
+- 2 diamond, solid
+- 2 diamond, pattern
+- 2 diamond, outline
+- 3 diamond, solid
+- 3 diamond, pattern
+- 3 diamond, outline
+- 1 squiggle, solid
+- 1 squiggle, pattern
+- 1 squiggle, outline
+- 2 squiggle, solid
+- 2 squiggle, pattern
+- 2 squiggle, outline
+- 3 squiggle, solid
+- 3 squiggle, pattern
+- 3 squiggle, outline
+
+Red
+- 1 oval, solid
+- 1 oval, pattern
+- 1 oval, outline
+- 2 oval, solid
+- 2 oval, pattern
+- 2 oval, outline
+- 3 oval, solid
+- 3 oval, pattern
+- 3 oval, outline
+- 1 diamond, solid
+- 1 diamond, pattern
+- 1 diamond, outline
+- 2 diamond, solid
+- 2 diamond, pattern
+- 2 diamond, outline
+- 3 diamond, solid
+- 3 diamond, pattern
+- 3 diamond, outline
+- 1 squiggle, solid
+- 1 squiggle, pattern
+- 1 squiggle, outline
+- 2 squiggle, solid
+- 2 squiggle, pattern
+- 2 squiggle, outline
+- 3 squiggle, solid
+- 3 squiggle, pattern
+- 3 squiggle, outline
+
+
+Yellow
+- 1 oval, solid
+- 1 oval, pattern
+- 1 oval, outline
+- 2 oval, solid
+- 2 oval, pattern
+- 2 oval, outline
+- 3 oval, solid
+- 3 oval, pattern
+- 3 oval, outline
+- 1 diamond, solid
+- 1 diamond, pattern
+- 1 diamond, outline
+- 2 diamond, solid
+- 2 diamond, pattern
+- 2 diamond, outline
+- 3 diamond, solid
+- 3 diamond, pattern
+- 3 diamond, outline
+- 1 squiggle, solid
+- 1 squiggle, pattern
+- 1 squiggle, outline
+- 2 squiggle, solid
+- 2 squiggle, pattern
+- 2 squiggle, outline
+- 3 squiggle, solid
+- 3 squiggle, pattern
+- 3 squiggle, outline
+
+-----
+
+Easy version...
+play wiht only solids... 27 cards)...
+deal out 9 cards and find sets that are all the same or all different
+
+Find three sets and then move on to the full version.
+
+
+
+Want to use drag and drop.
+
+Bonus would be adding a touch library so it works on ipad.
+
+
+cutlery - using fork/spoon/knife as the 3 shapes...
+
+technology...
+Vue.js - http://codepen.io/icebob/pen/RRLvAg https://vuejs.org/
+webpack
+babel
+Dragula for touch-friendly drag and drop (https://github.com/bevacqua/dragula) - https://github.com/Astray-git/vue-dragula
+https://github.com/vuejs/awesome-vue
+----
+add this to git workflow to keep gh-pages in sync:
+
+git checkout gh-pages // go to the gh-pages branch
+git rebase master // bring gh-pages up to date with master
+git push origin gh-pages // commit the changes
+git checkout master // return to the master branch
+----
+
+start with a boilerplate for the project? https://habd.as/awesome-react-boilerplates/
