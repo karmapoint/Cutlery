@@ -142,3 +142,11 @@ start with a boilerplate for the project? https://habd.as/awesome-react-boilerpl
 
 Went with this boilerplate:
 https://github.com/vuejs-templates/webpack-simple
+
+-----
+Previous set example
+https://github.com/anotherminh/SET
+
+react solitares:
+https://github.com/gcedo/react-solitaire
+https://github.com/pl12133/react-solitaire
