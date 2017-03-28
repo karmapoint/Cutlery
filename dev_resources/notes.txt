@@ -150,3 +150,10 @@ https://github.com/anotherminh/SET
 react solitares:
 https://github.com/gcedo/react-solitaire
 https://github.com/pl12133/react-solitaire
+
+----
+
+Colors:
+blue: 008aff
+red: c62424
+yellow: efd250
