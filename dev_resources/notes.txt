@@ -139,3 +139,6 @@ git checkout master // return to the master branch
 ----
 
 start with a boilerplate for the project? https://habd.as/awesome-react-boilerplates/
+
+Went with this boilerplate:
+https://github.com/vuejs-templates/webpack-simple

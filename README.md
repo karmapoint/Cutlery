@@ -45,8 +45,8 @@ The main content area of the screen will be mostly taken up by the board of 12 c
 ## Architecture
 
 * Vanilla JavaScript for primary logic.
-* Vue.js as a framework for a single page web app.
-* Dragula for touch-friendly drag and drop (they have a Vue version available)
+* React.js as a framework for a single page web app.
+* Dragula for touch-friendly drag and drop (they have a React version available)
 * Webpack and Babel for bundling the assorted scripts.
 
 The app will be composed of the following files/components:
@@ -70,7 +70,7 @@ The app will be composed of the following files/components:
 ## Timeline
 
 ### Day 1
-  * Setup project folders, webpack, and get a basic Vue.js single page app set up with the header and content area.
+  * Setup project folders, webpack, and get a basic React.js single page app set up with the header and content area.
 
 ### Day 2
   * Create deck and cards. Learn drag and drop. Have data start to pass back and forth between components.
