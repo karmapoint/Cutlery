@@ -10,6 +10,10 @@ html,body {
 body{
   background: url(../images/background.jpg);
   background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
 }
 
 .wrapper{
@@ -27,6 +31,7 @@ body{
   height:100%;
 }
 
+
 .topbar {
   padding-left:20px;
   padding-right: 20px;
@@ -41,6 +46,9 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
 }
 
 .logo {
@@ -93,7 +101,8 @@ body{
   display:flex;
   flex-direction: row;
   width:100%;
-  margin-top: 30px;
+  max-width: 1000px;
+  margin-top: 100px;
 }
 .targets {
   width: 25%;
@@ -103,8 +112,8 @@ body{
   display:flex;
   justify-content: center;
   align-items: center;
-  width:100px;
-  height: 150px;
+  width:133px;
+  height: 200px;
   border: 2px dashed black;
   margin: 10px auto;
   font-size: 48px;
@@ -122,13 +131,16 @@ body{
   display:flex;
   justify-content: center;
   align-items: center;
-  width:100px;
-  height: 150px;
+  width: 133px;;
+  height: 200px;;
   border: 2px solid #000000;
   margin: 10px auto;
 }
 /*Card classes*/
 
 .fork_1_red_solid {
+  width: 100px;
+  height: 150px;
+  background: white;
 
 }
