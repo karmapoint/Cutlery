@@ -3,9 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Cutlery: Browser-based Javascript card game based on SET</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
-    <script src="bundle.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
@@ -15,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Istok+Web:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheets/reset.css">
     <link rel="stylesheet" href="assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="assets/stylesheets/dragula.min.css">
 
   </head>
   <body>
@@ -24,7 +22,7 @@
       <div class="timer"><h2>1:00</h2></div>
       <div class="score"><h2>Score: 0</h2></div>
       <ul class="nav_links">
-        <li>New Game</li>
+        <li id="newGame" >New Game</li>
         <li>Tutorial</li>
         <li>About</li>
       </ul>
@@ -32,9 +30,9 @@
 
     <main class="content">
       <aside class="targets">
-        <div id="target1" class="target">1</div>
-        <div id="target2" class="target">2</div>
-        <div id="target3" class="target">3</div>
+        <div id="target1" class="target"></div>
+        <div id="target2" class="target"></div>
+        <div id="target3" class="target"></div>
       </aside>
       <section class="board">
         <div>
@@ -59,5 +57,10 @@
         </div>
       </section>
     </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>

@@ -42,6 +42,14 @@ class Deck {
       $(target).append(`<div class=${board[i-1].cardClass}></div>`);
     }
   }
+  clearBoard(){
+    for (var i = 1; i < 13; i++) {
+      let target = `#card${i}`;
+      $(target).empty();
+    }
+    $(".target").empty();
+  }
+
 
 }
 module.exports = Deck;

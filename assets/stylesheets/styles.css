@@ -121,6 +121,18 @@ body{
   text-align: center;
   font-family: 'Fredoka One', cursive;
 }
+
+#target1 {
+  background:url(../images/target_1_bg.png)
+}
+
+#target2 {
+  background:url(../images/target_2_bg.png)
+}
+
+#target3 {
+  background:url(../images/target_3_bg.png)
+}
 .board {
   width: 75%;
   display:flex;
