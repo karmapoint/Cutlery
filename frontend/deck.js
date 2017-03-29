@@ -12,6 +12,7 @@ class Deck {
   constructor(){
     this.cards = [];
     this.shuffledCards = this.generateDeck();
+    this.board = this.deal12(this.shuffledCards);
   }
 
   generateDeck(){
@@ -25,7 +26,21 @@ class Deck {
       });
     });
     return _.shuffle(this.cards);
+  }
 
+  deal12(deck){
+    let hand = [];
+    for (let i = 0; i < 12; i++) {
+      hand.push(deck.pop());
+    }
+    return hand;
+  }
+
+  renderBoard(board){
+    for (var i = 1; i < 13; i++) {
+      let target = `#card${i}`;
+      $(target).append(`<div class=${board[i-1].cardClass}></div>`);
+    }
   }
 
 }

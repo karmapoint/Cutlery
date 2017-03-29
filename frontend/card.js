@@ -5,8 +5,7 @@ class Card {
     this.color = color;
     this.shading = shading;
     this.number = number;
-    this.shapeNumber = this.shape + "_" + this.number;
-    this.colorShading = this.color + "_" + this.shading;
+    this.cardClass = this.shape + "_" + this.color + "_" + this.shading + "_" + this.number;
   }
 
 }

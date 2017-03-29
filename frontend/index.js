@@ -3,8 +3,9 @@ const Deck = require("./deck.js");
 
 document.addEventListener("DOMContentLoaded", function(){
   const currentDeck = new Deck();
-  let x = currentDeck.shuffledCards[0];
-  let y = `${x.shapeNumber} ${x.colorShading}`;
+  let y = currentDeck.board;
+  let x = currentDeck.shuffledCards;
   console.log(y);
-  $("#root").append(`<div class=${y}></div>`);
+  console.log(x.length);
+  currentDeck.renderBoard(currentDeck.board);
 });
