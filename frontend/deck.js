@@ -1,14 +1,5 @@
-class Card {
-  constructor(shape, color, shading, number){
-    this.shape = shape;
-    this.color = color;
-    this.shading = shading;
-    this.number = number;
-    let shapeNumber = this.shape + "_" + this.number;
-    let colorShading = this.color + "_" + this.shading;
-    this.cardClass = shapeNumber + " " + colorShading;
-  }
-}
+var _ = require('lodash');
+const Card = require("./card");
 
 const CardAttributes = {
   SHAPES: ["fork", "spoon", "knife"],
@@ -20,7 +11,7 @@ const CardAttributes = {
 class Deck {
   constructor(){
     this.cards = [];
-    this.generateDeck();
+    this.shuffledCards = this.generateDeck();
   }
 
   generateDeck(){
@@ -33,7 +24,9 @@ class Deck {
         });
       });
     });
-    return this.cards;
+    return _.shuffle(this.cards);
+
   }
 
 }
+module.exports = Deck;

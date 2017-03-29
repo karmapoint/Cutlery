@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Cutlery: Browser-based Javascript card game based on SET</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
     <script src="bundle.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
@@ -13,11 +15,47 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Istok+Web:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheets/reset.css">
     <link rel="stylesheet" href="assets/stylesheets/styles.css">
-    <script src="card.js"></script>
+
   </head>
   <body>
-    <div id="root">
-      Test
-    </div>
+    <header class="topbar">
+      <img src="../../assets/images/cutlery_logo_topbar.png" class="logo" />
+      <div class="timer"><h2>1:00</h2></div>
+      <div class="score"><h2>Score: 0</h2></div>
+      <ul class="nav_links">
+        <li>New Game</li>
+        <li>Tutorial</li>
+        <li>About</li>
+      </ul>
+    </header>
+    <main class="content">
+      <aside class="targets">
+        <div id="target1" class="target">1</div>
+        <div id="target2" class="target">2</div>
+        <div id="target3" class="target">3</div>
+      </aside>
+      <section class="board">
+        <div>
+          <div id="card1" class="card_start"></div>
+          <div id="card2" class="card_start"></div>
+          <div id="card3" class="card_start"></div>
+        </div>
+        <div>
+          <div id="card4" class="card_start"></div>
+          <div id="card5" class="card_start"></div>
+          <div id="card6" class="card_start"></div>
+        </div>
+        <div>
+          <div id="card7" class="card_start"></div>
+          <div id="card8" class="card_start"></div>
+          <div id="card9" class="card_start"></div>
+        </div>
+        <div>
+          <div id="card10" class="card_start"></div>
+          <div id="card11" class="card_start"></div>
+          <div id="card12" class="card_start"></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
