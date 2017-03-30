@@ -1,5 +1,5 @@
 
-const ASSET_PATH = '/Cutlery';
+const ASSET_PATH = 'https://karmapoint.github.io/Cutlery/';
 
 module.exports = {
   entry: "./frontend/index.js",
