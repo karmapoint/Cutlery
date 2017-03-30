@@ -157,3 +157,13 @@ Colors:
 blue: 008aff
 red: c62424
 yellow: efd250
+----
+
+Todo:
+
+- gh-pages images issue... webpack public path?
+- Timer
+- clean up drag and drop
+- high score in local storage
+- tutorial
+- level up

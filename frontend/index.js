@@ -6,8 +6,12 @@ var _ = require('lodash');
 
 document.addEventListener("DOMContentLoaded", function(){
   var currentGame = new Game();
+
+
+  // New Game Button --------------------
   $( "#newGame").click(function() {
     currentGame.currentDeck.clearBoard();
+    currentGame.resetScore();
     new Game();
   });
 

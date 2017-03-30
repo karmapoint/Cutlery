@@ -14,6 +14,7 @@ class Game {
 
   resetScore(){
     this.score = 0;
+    $("#score").html(this.score);
   }
 
 

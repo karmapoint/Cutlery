@@ -154,6 +154,26 @@ body{
   margin: 10px auto;
 }
 
+/* Timer --------------------*/
+
+#progressBar{
+  width:90%;
+  margin: 10px auto;
+  height: 24px;
+  background-color: #000000;
+  border: 1px solid white;
+}
+
+#progressBar div {
+  height: 100%;
+  text-align: right;
+  padding: 0 10px;
+  line-height: 24px;
+  background-color: #7ebf44;
+  box-sizing: border-box;
+}
+
+
 
 /*Card classes --------------------*/
 
