@@ -161,9 +161,10 @@ yellow: efd250
 
 Todo:
 
-- gh-pages images issue... webpack public path?
-- Timer
+- handle failed  set attempts
 - clean up drag and drop
 - high score in local storage
+- replace alerts
 - tutorial
+- improve timer
 - level up

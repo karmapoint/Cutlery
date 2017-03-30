@@ -1,18 +1,22 @@
 const Card = require("./card");
 const Deck = require("./deck");
 const Game = require("./game");
-// const Timer = require("./timer");
+const Timer = require("./timer");
 const dragula = require('dragula');
 var _ = require('lodash');
 
 document.addEventListener("DOMContentLoaded", function(){
-  var currentGame = new Game();
+  const currentGame = new Game();
+  const currentTimer = new Timer();
+  $(".timer").html(currentTimer.counter);
+
 
 
   // New Game Button --------------------
   $( "#newGame").click(function() {
     currentGame.currentDeck.clearBoard();
     currentGame.resetScore();
+    currentTimer.startTimer();
     new Game();
   });
 
@@ -23,10 +27,12 @@ document.addEventListener("DOMContentLoaded", function(){
       return el.classList.contains('card_start') ||
       el.classList.contains('target');
     }
-  }).on('drop', (el) => {
+  }).on('drop',
+    (el) => {
     potentialAttributes.push(el.className.slice(0, el.className.length - 11));
     checkForSet(potentialAttributes);
-  });
+  }
+);
 
 
   const checkForSet = (potential) => {
@@ -52,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function(){
   const successfulSet = () => {
     currentGame.updateScore();
     alert("found one!");
+    currentTimer.counter = 60;
     currentGame.currentDeck.clearTargets();
     let newCards =
     currentGame.currentDeck.draw3(currentGame.currentDeck.shuffledCards);
