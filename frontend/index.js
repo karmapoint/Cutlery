@@ -1,6 +1,7 @@
 const Card = require("./card");
 const Deck = require("./deck");
 const Game = require("./game");
+const Timer = require("./timer");
 const dragula = require('dragula');
 var _ = require('lodash');
 
