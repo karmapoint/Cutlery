@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", function(){
     new Game();
   });
 
-
-
   let potentialAttributes = [];
 
   let drake = dragula({
@@ -22,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   }).on('drop', (el) => {
     potentialAttributes.push(el.className.slice(0, el.className.length - 11));
-
     checkForSet(potentialAttributes);
   });
 
@@ -37,8 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
           tempAttr.forEach(el => attributes.push(el));
         });
         if (countAttributes(attributes) === true) {
-          currentGame.updateScore();
-          alert("found one!");
+          successfulSet();
         }
     }
   };
@@ -48,7 +44,13 @@ document.addEventListener("DOMContentLoaded", function(){
     return !_.values(counts).includes(2);
   };
 
-
+  const successfulSet = () => {
+    currentGame.updateScore();
+    alert("found one!");
+    currentGame.currentDeck.clearTargets();
+    let newCards =
+    currentGame.currentDeck.draw3(currentGame.currentDeck.shuffledCards);
+  };
 
 }
 );

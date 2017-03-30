@@ -36,15 +36,37 @@ class Deck {
     return hand;
   }
 
+  draw3(deck){
+    let newCards = [];
+    for (let i = 0; i < 3; i++) {
+      newCards.push(deck.pop());
+    }
+    this.fillBoard(newCards);
+  }
+
+  fillBoard(cards){
+    for (let i = 0; i < 3; i++) {
+      $('.card_start:empty:first').append(`<div class=${cards[i].cardClass}></div>`);
+    }
+  }
+
   renderBoard(board){
     for (var i = 1; i < 16; i++) {
       let target = `#card${i}`;
-      $(target).append(`<div class=${board[i-1].cardClass} ondrop="()=>{alert('dropped')}"></div>`);
+      $(target).append(`<div class=${board[i-1].cardClass}></div>`);
     }
   }
   clearBoard(){
     for (var i = 1; i < 16; i++) {
       let target = `#card${i}`;
+      $(target).empty();
+    }
+    $(".target").empty();
+  }
+
+  clearTargets(){
+    for (var i = 1; i < 4; i++) {
+      let target = `#target${i}`;
       $(target).empty();
     }
     $(".target").empty();
