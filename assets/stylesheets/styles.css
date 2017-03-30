@@ -8,7 +8,7 @@ html,body {
 }
 
 body{
-  background: url(../images/background.jpg);
+  background: url(/assets/images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display:flex;
@@ -160,566 +160,566 @@ body{
 .fork_red_outline_1 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_red_outline_1.png);
+ background: url(/assets/images/fork_red_outline_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_red_outline_2 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_red_outline_2.png);
+ background: url(/assets/images/fork_red_outline_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_red_outline_3 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_red_outline_3.png);
+ background: url(/assets/images/fork_red_outline_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_red_solid_1 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_red_solid_1.png);
+ background: url(/assets/images/fork_red_solid_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_red_solid_2 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_red_solid_2.png);
+ background: url(/assets/images/fork_red_solid_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_red_solid_3 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_red_solid_3.png);
+ background: url(/assets/images/fork_red_solid_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_red_gradient_1 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_red_gradient_1.png);
+ background: url(/assets/images/fork_red_gradient_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_red_gradient_2 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_red_gradient_2.png);
+ background: url(/assets/images/fork_red_gradient_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_red_gradient_3 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_red_gradient_3.png);
+ background: url(/assets/images/fork_red_gradient_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_red_outline_1 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_red_outline_1.png);
+ background: url(/assets/images/spoon_red_outline_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_red_outline_2 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_red_outline_2.png);
+ background: url(/assets/images/spoon_red_outline_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_red_outline_3 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_red_outline_3.png);
+ background: url(/assets/images/spoon_red_outline_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_red_solid_1 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_red_solid_1.png);
+ background: url(/assets/images/spoon_red_solid_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_red_solid_2 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_red_solid_2.png);
+ background: url(/assets/images/spoon_red_solid_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_red_solid_3 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_red_solid_3.png);
+ background: url(/assets/images/spoon_red_solid_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_red_gradient_1 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_red_gradient_1.png);
+ background: url(/assets/images/spoon_red_gradient_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_red_gradient_2 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_red_gradient_2.png);
+ background: url(/assets/images/spoon_red_gradient_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_red_gradient_3 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_red_gradient_3.png);
+ background: url(/assets/images/spoon_red_gradient_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_red_outline_1 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_red_outline_1.png);
+ background: url(/assets/images/knife_red_outline_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_red_outline_2 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_red_outline_2.png);
+ background: url(/assets/images/knife_red_outline_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_red_outline_3 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_red_outline_3.png);
+ background: url(/assets/images/knife_red_outline_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_red_solid_1 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_red_solid_1.png);
+ background: url(/assets/images/knife_red_solid_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_red_solid_2 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_red_solid_2.png);
+ background: url(/assets/images/knife_red_solid_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_red_solid_3 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_red_solid_3.png);
+ background: url(/assets/images/knife_red_solid_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_red_gradient_1 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_red_gradient_1.png);
+ background: url(/assets/images/knife_red_gradient_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_red_gradient_2 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_red_gradient_2.png);
+ background: url(/assets/images/knife_red_gradient_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_red_gradient_3 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_red_gradient_3.png);
+ background: url(/assets/images/knife_red_gradient_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_blue_outline_1 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_blue_outline_1.png);
+ background: url(/assets/images/fork_blue_outline_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_blue_outline_2 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_blue_outline_2.png);
+ background: url(/assets/images/fork_blue_outline_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_blue_outline_3 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_blue_outline_3.png);
+ background: url(/assets/images/fork_blue_outline_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_blue_solid_1 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_blue_solid_1.png);
+ background: url(/assets/images/fork_blue_solid_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_blue_solid_2 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_blue_solid_2.png);
+ background: url(/assets/images/fork_blue_solid_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_blue_solid_3 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_blue_solid_3.png);
+ background: url(/assets/images/fork_blue_solid_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_blue_gradient_1 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_blue_gradient_1.png);
+ background: url(/assets/images/fork_blue_gradient_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_blue_gradient_2 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_blue_gradient_2.png);
+ background: url(/assets/images/fork_blue_gradient_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_blue_gradient_3 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_blue_gradient_3.png);
+ background: url(/assets/images/fork_blue_gradient_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_blue_outline_1 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_blue_outline_1.png);
+ background: url(/assets/images/spoon_blue_outline_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_blue_outline_2 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_blue_outline_2.png);
+ background: url(/assets/images/spoon_blue_outline_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_blue_outline_3 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_blue_outline_3.png);
+ background: url(/assets/images/spoon_blue_outline_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_blue_solid_1 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_blue_solid_1.png);
+ background: url(/assets/images/spoon_blue_solid_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_blue_solid_2 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_blue_solid_2.png);
+ background: url(/assets/images/spoon_blue_solid_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_blue_solid_3 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_blue_solid_3.png);
+ background: url(/assets/images/spoon_blue_solid_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_blue_gradient_1 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_blue_gradient_1.png);
+ background: url(/assets/images/spoon_blue_gradient_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_blue_gradient_2 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_blue_gradient_2.png);
+ background: url(/assets/images/spoon_blue_gradient_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_blue_gradient_3 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_blue_gradient_3.png);
+ background: url(/assets/images/spoon_blue_gradient_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_blue_outline_1 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_blue_outline_1.png);
+ background: url(/assets/images/knife_blue_outline_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_blue_outline_2 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_blue_outline_2.png);
+ background: url(/assets/images/knife_blue_outline_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_blue_outline_3 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_blue_outline_3.png);
+ background: url(/assets/images/knife_blue_outline_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_blue_solid_1 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_blue_solid_1.png);
+ background: url(/assets/images/knife_blue_solid_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_blue_solid_2 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_blue_solid_2.png);
+ background: url(/assets/images/knife_blue_solid_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_blue_solid_3 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_blue_solid_3.png);
+ background: url(/assets/images/knife_blue_solid_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_blue_gradient_1 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_blue_gradient_1.png);
+ background: url(/assets/images/knife_blue_gradient_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_blue_gradient_2 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_blue_gradient_2.png);
+ background: url(/assets/images/knife_blue_gradient_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_blue_gradient_3 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_blue_gradient_3.png);
+ background: url(/assets/images/knife_blue_gradient_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_yellow_outline_1 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_yellow_outline_1.png);
+ background: url(/assets/images/fork_yellow_outline_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_yellow_outline_2 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_yellow_outline_2.png);
+ background: url(/assets/images/fork_yellow_outline_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_yellow_outline_3 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_yellow_outline_3.png);
+ background: url(/assets/images/fork_yellow_outline_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_yellow_solid_1 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_yellow_solid_1.png);
+ background: url(/assets/images/fork_yellow_solid_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_yellow_solid_2 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_yellow_solid_2.png);
+ background: url(/assets/images/fork_yellow_solid_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_yellow_solid_3 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_yellow_solid_3.png);
+ background: url(/assets/images/fork_yellow_solid_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_yellow_gradient_1 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_yellow_gradient_1.png);
+ background: url(/assets/images/fork_yellow_gradient_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_yellow_gradient_2 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_yellow_gradient_2.png);
+ background: url(/assets/images/fork_yellow_gradient_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .fork_yellow_gradient_3 {
  width: 133px;
  height: 200px;
- background: url(../images/fork_yellow_gradient_3.png);
+ background: url(/assets/images/fork_yellow_gradient_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_yellow_outline_1 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_yellow_outline_1.png);
+ background: url(/assets/images/spoon_yellow_outline_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_yellow_outline_2 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_yellow_outline_2.png);
+ background: url(/assets/images/spoon_yellow_outline_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_yellow_outline_3 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_yellow_outline_3.png);
+ background: url(/assets/images/spoon_yellow_outline_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_yellow_solid_1 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_yellow_solid_1.png);
+ background: url(/assets/images/spoon_yellow_solid_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_yellow_solid_2 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_yellow_solid_2.png);
+ background: url(/assets/images/spoon_yellow_solid_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_yellow_solid_3 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_yellow_solid_3.png);
+ background: url(/assets/images/spoon_yellow_solid_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_yellow_gradient_1 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_yellow_gradient_1.png);
+ background: url(/assets/images/spoon_yellow_gradient_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_yellow_gradient_2 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_yellow_gradient_2.png);
+ background: url(/assets/images/spoon_yellow_gradient_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .spoon_yellow_gradient_3 {
  width: 133px;
  height: 200px;
- background: url(../images/spoon_yellow_gradient_3.png);
+ background: url(/assets/images/spoon_yellow_gradient_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_yellow_outline_1 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_yellow_outline_1.png);
+ background: url(/assets/images/knife_yellow_outline_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_yellow_outline_2 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_yellow_outline_2.png);
+ background: url(/assets/images/knife_yellow_outline_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_yellow_outline_3 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_yellow_outline_3.png);
+ background: url(/assets/images/knife_yellow_outline_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_yellow_solid_1 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_yellow_solid_1.png);
+ background: url(/assets/images/knife_yellow_solid_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_yellow_solid_2 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_yellow_solid_2.png);
+ background: url(/assets/images/knife_yellow_solid_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_yellow_solid_3 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_yellow_solid_3.png);
+ background: url(/assets/images/knife_yellow_solid_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_yellow_gradient_1 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_yellow_gradient_1.png);
+ background: url(/assets/images/knife_yellow_gradient_1.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_yellow_gradient_2 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_yellow_gradient_2.png);
+ background: url(/assets/images/knife_yellow_gradient_2.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
 
 .knife_yellow_gradient_3 {
  width: 133px;
  height: 200px;
- background: url(../images/knife_yellow_gradient_3.png);
+ background: url(/assets/images/knife_yellow_gradient_3.png);
  box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.80);
 }
