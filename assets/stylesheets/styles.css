@@ -127,15 +127,15 @@ body{
 }
 
 #target1 {
-  background:url(../images/target_1_bg.png)
+  background:url(/assets/images/target_1_bg.png)
 }
 
 #target2 {
-  background:url(../images/target_2_bg.png)
+  background:url(/assets/images/target_2_bg.png)
 }
 
 #target3 {
-  background:url(../images/target_3_bg.png)
+  background:url(/assets/images/target_3_bg.png)
 }
 .board {
   width: 75%;
