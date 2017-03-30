@@ -30,20 +30,20 @@ class Deck {
 
   deal12(deck){
     let hand = [];
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 15; i++) {
       hand.push(deck.pop());
     }
     return hand;
   }
 
   renderBoard(board){
-    for (var i = 1; i < 13; i++) {
+    for (var i = 1; i < 16; i++) {
       let target = `#card${i}`;
-      $(target).append(`<div class=${board[i-1].cardClass}></div>`);
+      $(target).append(`<div class=${board[i-1].cardClass} ondrop="()=>{alert('dropped')}"></div>`);
     }
   }
   clearBoard(){
-    for (var i = 1; i < 13; i++) {
+    for (var i = 1; i < 16; i++) {
       let target = `#card${i}`;
       $(target).empty();
     }
