@@ -1,5 +1,5 @@
 
-const ASSET_PATH = '/';
+const ASSET_PATH = '/Cutlery';
 
 module.exports = {
   entry: "./frontend/index.js",
