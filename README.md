@@ -25,6 +25,29 @@ I used Forks, Spoons, and Knives to give the game a fun spin. Here are all of th
 
 * I added a short tutorial modal to teach players the basics of the game. I created my own modals with CSS and JavaScript which I used for a tutorial, an about screen, and notifications about successfully finding a set, submitting an incorrect set, and completing a game.
 
+
+## Technologies:
+ * HTML - Single page
+ * CSS - Flexbox display
+ * JavaScript - Functionality
+ * jQuery - Assisted with some DOM manipulation
+ * Webpack - Consolidated my production JavaScript files
+ * Babel - Made code ES5 compatible.
+ * Dragula - Drag and drop functionality
+ * Lodash - Used to save time on some array methods
+ * Photoshop - designed logo and cards
+
+
+## View
+Cutlery is a single page app. There is a header that stretches across the top of the screen at all times. It displays the logo  in the upper left corner. Simple navigation links appear on the right side. The center of the header is devoted to the timer and the score.
+
+The main content area of the screen is taken up by the board of 15 cards.  There is a column on the far left of the screen displaying the three target areas where cards can be dropped to make a set.  
+
+![wireframes](dev_resources/Cutlery-Wireframe.png)
+
+![screenshot](dev_resources/cutleryScreenshot.png)
+
+
 ## Sample Code
 
 #### Drag and drop implementation
@@ -51,27 +74,6 @@ I found a way to strip the attributes of a card from the card's class. Then I ma
     return !_.values(counts).includes(2);
   };
 ```
-
-## Technologies:
- * HTML - Single page
- * CSS - Flexbox display
- * JavaScript - Functionality
- * jQuery - Assisted with some DOM manipulation
- * Webpack - Consolidated my production JavaScript files
- * Babel - Made code ES5 compatible.
- * Dragula - Drag and drop functionality
- * Lodash - Used to save time on some array methods
- * Photoshop - designed logo and cards
-
-
-## View
-Cutlery is a single page app. There is a header that stretches across the top of the screen at all times. It displays the logo  in the upper left corner. Simple navigation links appear on the right side. The center of the header is devoted to the timer and the score.
-
-The main content area of the screen is taken up by the board of 15 cards.  There is a column on the far left of the screen displaying the three target areas where cards can be dropped to make a set.  
-
-![wireframes](dev_resources/Cutlery-Wireframe.png)
-
-![screenshot](dev_resources/cutleryScreenshot.png)
 
 ## Future Improvements
 
