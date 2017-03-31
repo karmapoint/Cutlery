@@ -159,12 +159,17 @@ red: c62424
 yellow: efd250
 ----
 
-Todo:
+Tutorial:
+Drag and drop cards to the targets to makes sets of 3.
 
-- handle failed  set attempts
+For each card, the number, shape, color, and shading must all be the same or all different.  Here are 3 examples:
+
+
+
+----
+Todo:
+- replace alerts
+- production readme
 - clean up drag and drop
 - high score in local storage
-- replace alerts
-- tutorial
-- improve timer
 - level up

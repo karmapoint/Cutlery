@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="assets/stylesheets/reset.css">
     <link rel="stylesheet" href="assets/stylesheets/styles.css">
     <link rel="stylesheet" href="assets/stylesheets/dragula.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="https://karmapoint.github.io/Cutlery/favicon.ico"/>
 
   </head>
   <body>
@@ -27,12 +28,55 @@
       <div class="score"><h2 class="score_label">Score:</h2><h2 id="score">0</h2></div>
       <ul class="nav_links">
         <li id="newGame" >New Game</li>
-        <li>Tutorial</li>
-        <a href="https://github.com/karmapoint/Cutlery" target="_blank"><li id="about">About</li></a>
+        <li id="tutorialButton">Tutorial</li>
+        <li id="aboutButton">About</li>
       </ul>
     </header>
-    <!-- <div class="tutorialContainer"> -->
+
+
+
       <main class="content">
+        <div class="modalBox">
+
+
+          <!-- TUTORIAL ********************** -->
+          <div class="modalMessageBox" id="tutorialMessage">
+            <div class="instructions">
+              <img src="assets/images/cutlery_logo_topbar.png" class="logo" />
+              <p class="modalMessage">Cutlery is a simple card game based on SET. It will test your perception and pattern recognition.</p>
+
+              <p>To play, drag and drop cards to the targets to makes sets of 3.</p>
+
+              <p>For each card, the <strong>number</strong>, <strong>shape</strong>, <strong>color</strong>, and <strong>shading</strong> must all be the same or all different. Examine the example sets to the right. </p>
+            </div>
+            <div class="examples">
+              <img src="assets/images/example1.png" />
+              <img src="assets/images/example2.png" />
+              <img src="assets/images/example3.png" />
+            </div>
+            <span class="close">&times;</span>
+          </div>
+
+          <!-- ABOUT ********************** -->
+          <div class="modalMessageBox" id="aboutMessage">
+            <div class="instructions">
+              <img src="assets/images/cutlery_logo_topbar.png" class="logo aboutImage" />
+              <p class="modalMessageAbout">Coded and designed by <a href="https://www.karmapoint.com/" target="_blank">Brent Gummow</a>,<br> Full-Stack Product Developer</p>
+
+
+            </div>
+            <div class="aboutExamples">
+              <a href="https://github.com/karmapoint/Cutlery" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/karmapoint/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+            <span class="close">&times;</span>
+          </div>
+
+
+
+
+
+        </div>
         <aside class="targets">
           <div id="target1" class="target"></div>
           <div id="target2" class="target"></div>

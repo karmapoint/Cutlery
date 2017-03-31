@@ -79,6 +79,41 @@ document.addEventListener("DOMContentLoaded", function(){
 
   };
 
+  const modal = document.getElementsByClassName('modalBox')[0];
+  const tutorialButton = document.getElementById("tutorialButton");
+  const tutorialMessage = document.getElementById("tutorialMessage");
+  const aboutMessage = document.getElementById("aboutMessage");
+  const aboutButton = document.getElementById("aboutButton");
+  const closer = document.getElementsByClassName('close')[0];
+  const closer2 = document.getElementsByClassName('close')[1];
+
+  tutorialButton.onclick = () => {
+    modal.style.display = "flex";
+    tutorialMessage.style.display = "flex";
+  };
+
+  aboutButton.onclick = () => {
+    modal.style.display = "flex";
+    aboutMessage.style.display = "flex";
+  };
+
+  closer.onclick = () => {
+    modal.style.display = "none";
+    tutorialMessage.style.display = "none";
+  };
+
+  closer2.onclick = () => {
+    modal.style.display = "none";
+    aboutMessage.style.display = "none";
+  };
+
+  window.onclick = (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      tutorialMessage.style.display = "none";
+      aboutMessage.style.display = "none";
+    }
+  };
 
 
 
