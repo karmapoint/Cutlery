@@ -6,9 +6,10 @@ const dragula = require('dragula');
 var _ = require('lodash');
 
 document.addEventListener("DOMContentLoaded", function(){
-  const currentGame = new Game();
+  let currentGame = new Game();
   const currentTimer = new Timer();
   $(".timer").html(currentTimer.counter);
+  let potentialAttributes = [];
 
 
 
@@ -16,11 +17,13 @@ document.addEventListener("DOMContentLoaded", function(){
   $( "#newGame").click(function() {
     currentGame.currentDeck.clearBoard();
     currentGame.resetScore();
+    currentTimer.resetTimer();
     currentTimer.startTimer();
-    new Game();
+    currentGame = new Game();
+    potentialAttributes = [];
   });
 
-  let potentialAttributes = [];
+
 
   let drake = dragula({
     isContainer: (el) => {
@@ -46,6 +49,9 @@ document.addEventListener("DOMContentLoaded", function(){
         });
         if (countAttributes(attributes) === true) {
           successfulSet();
+          potentialAttributes =[];
+        } else {
+          alert("Not a set!");
         }
     }
   };
@@ -58,11 +64,15 @@ document.addEventListener("DOMContentLoaded", function(){
   const successfulSet = () => {
     currentGame.updateScore();
     alert("found one!");
-    currentTimer.counter = 60;
+    currentTimer.resetTimer();
     currentGame.currentDeck.clearTargets();
     let newCards =
     currentGame.currentDeck.draw3(currentGame.currentDeck.shuffledCards);
+
   };
+
+
+
 
 }
 );

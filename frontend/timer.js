@@ -5,18 +5,15 @@ class Timer {
   }
 
   startTimer(){
-    if (this.counting === false){
-      this.counting = true;
-      this.countdown();
-    }
+    this.countdown();
   }
 
   countdown(){
     $(".timer").html(this.counter);
     let ticking = setInterval(() => {
-      $(".timer").html(this.counter);
       this.counter--;
-      if (this.counter < 0) {
+      $(".timer").html(this.counter);
+      if (this.counter <= 0) {
         clearInterval(ticking);
         alert("Game Over!");
       }
@@ -25,9 +22,9 @@ class Timer {
 
   }
 
-  pauseTimer(){
-    this.counting = false;
 
+  resetTimer(){
+    this.counter = 60;
   }
 
 }

@@ -12,7 +12,7 @@ class Deck {
   constructor(){
     this.cards = [];
     this.shuffledCards = this.generateDeck();
-    this.board = this.deal12(this.shuffledCards);
+    this.board = this.deal15(this.shuffledCards);
   }
 
   generateDeck(){
@@ -28,7 +28,7 @@ class Deck {
     return _.shuffle(this.cards);
   }
 
-  deal12(deck){
+  deal15(deck){
     let hand = [];
     for (let i = 0; i < 15; i++) {
       hand.push(deck.pop());
