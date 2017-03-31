@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(){
           successfulSet();
           potentialAttributes =[];
         } else {
-          alert("Not a set!");
+          alertFail();
           potentialAttributes =[];
           let failure1 = $("#target1").html();
           $('.card_start:empty:first').html(failure1);
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   const successfulSet = () => {
     currentGame.updateScore();
-    alert("found one!");
+    alertSet();
     currentTimer.resetTimer();
     currentGame.currentDeck.clearTargets();
     let newCards =
@@ -80,12 +80,36 @@ document.addEventListener("DOMContentLoaded", function(){
   };
 
   const modal = document.getElementsByClassName('modalBox')[0];
+  const transparentModal = document.getElementsByClassName('transparentModal')[0];
   const tutorialButton = document.getElementById("tutorialButton");
   const tutorialMessage = document.getElementById("tutorialMessage");
   const aboutMessage = document.getElementById("aboutMessage");
+  const gameOverMessage = document.getElementById("gameOver");
+  const setMessage = document.getElementById("setMessage");
+  const failMessage = document.getElementById("failMessage");
   const aboutButton = document.getElementById("aboutButton");
   const closer = document.getElementsByClassName('close')[0];
   const closer2 = document.getElementsByClassName('close')[1];
+  const setMessageClose = document.getElementById('setMessageClose');
+  const failMessageClose = document.getElementById('failMessageClose');
+  const gameOverClose = document.getElementById('gameOverClose');
+
+  const alertSet = () => {
+    transparentModal.style.display = "flex";
+    setMessage.style.display = "flex";
+    currentTimer.pauseTimer();
+  };
+
+  const alertFail = () => {
+    transparentModal.style.display = "flex";
+    failMessage.style.display = "flex";
+    currentTimer.pauseTimer();
+  };
+
+  const alertGameOver = () => {
+    transparentModal.style.display = "flex";
+    gameOverMessage.style.display = "flex";
+  };
 
   tutorialButton.onclick = () => {
     modal.style.display = "flex";
@@ -107,11 +131,32 @@ document.addEventListener("DOMContentLoaded", function(){
     aboutMessage.style.display = "none";
   };
 
+  setMessageClose.onclick = () => {
+    transparentModal.style.display = "none";
+    setMessage.style.display = "none";
+    currentTimer.startTimer();
+  };
+
+  failMessageClose.onclick = () => {
+    transparentModal.style.display = "none";
+    failMessage.style.display = "none";
+    currentTimer.startTimer();
+  };
+
+  gameOverClose.onclick = () => {
+    transparentModal.style.display = "none";
+    failMessage.style.display = "none";
+  };
+
   window.onclick = (event) => {
     if (event.target === modal) {
       modal.style.display = "none";
+      transparentModal.style.display = "none";
       tutorialMessage.style.display = "none";
       aboutMessage.style.display = "none";
+      setMessage.style.display = "none";
+      currentTimer.startTimer();
+
     }
   };
 

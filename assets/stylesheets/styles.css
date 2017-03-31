@@ -114,6 +114,23 @@ a:link, a:visited {
   background-color: rgba(0,0,0, 0.8);
 }
 
+.transparentModal {
+  display:none;
+  /*display:flex;*/
+  position:fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  left:0;
+  top: 0;
+  width:100%;
+  height:100%;
+  overflow: auto;
+  background-color: transparent;
+  background-color: rgba(0,0,0, 0.3);
+}
+
 #tutorialMessage{
   display:none;
 }
@@ -135,6 +152,51 @@ a:link, a:visited {
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.oneMessage{
+    width: 90%;
+}
+
+
+#setMessage {
+  display: none;
+  width: 40%;
+  padding: 20px;
+}
+
+#failMessage {
+  display: none;
+  width: 40%;
+  padding: 20px;
+}
+
+#gameOver {
+  display: none;
+  width: 40%;
+  padding: 20px;
+}
+
+#check {
+  float: right;
+  font-size: 72px;
+  color: green;
+}
+#ex {
+  float: right;
+  font-size: 72px;
+  color: red;
+}
+#frown {
+  float: right;
+  font-size: 72px;
+  color: yellow;
+}
+
+.modalMessageBox h2 {
+  font-size: 36px;
+  margin-bottom:10px;
+  text-align:center;
 }
 
 .instructions {

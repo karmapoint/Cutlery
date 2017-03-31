@@ -37,8 +37,6 @@
 
       <main class="content">
         <div class="modalBox">
-
-
           <!-- TUTORIAL ********************** -->
           <div class="modalMessageBox" id="tutorialMessage">
             <div class="instructions">
@@ -62,8 +60,6 @@
             <div class="instructions">
               <img src="assets/images/cutlery_logo_topbar.png" class="logo aboutImage" />
               <p class="modalMessageAbout">Coded and designed by <a href="https://www.karmapoint.com/" target="_blank">Brent Gummow</a>,<br> Full-Stack Product Developer</p>
-
-
             </div>
             <div class="aboutExamples">
               <a href="https://github.com/karmapoint/Cutlery" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -74,6 +70,43 @@
 
 
 
+        </div>
+        <div class="transparentModal">
+          <!-- SET ********************** -->
+
+          <div class="modalMessageBox" id="setMessage">
+
+              <div class="oneMessage">
+              <i class="fa fa-check" id="check" aria-hidden="true"></i>
+              <h2>You found a set!</h2>
+              <p class="modalMessageAbout">Keep going and see how many you can find!</p>
+          </div>
+            <span class="close" id="setMessageClose">&times;</span>
+          </div>
+
+
+          <!-- FAIL ********************** -->
+          <div class="modalMessageBox" id="failMessage">
+
+              <div class="oneMessage">
+            <i class="fa fa-times-circle" aria-hidden="true" id="ex"></i></i>
+              <h2>Sorry - not a set!</h2>
+              <p class="modalMessageAbout">Keep looking, you can do it!</p>
+          </div>
+            <span class="close" id="failMessageClose">&times;</span>
+          </div>
+
+
+          <!-- GAMEOVER ********************** -->
+          <div class="modalMessageBox" id="gameOver">
+
+              <div class="oneMessage">
+            <i class="fa fa-frown-o" aria-hidden="true" id="frown"></i></i>
+              <h2>Game Over!</h2>
+              <p class="modalMessageAbout">Play again by clicking "New Game"!</p>
+          </div>
+            <span class="close" id="gameOverClose">&times;</span>
+          </div>
 
 
         </div>

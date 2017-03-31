@@ -168,7 +168,7 @@ For each card, the number, shape, color, and shading must all be the same or all
 
 ----
 Todo:
-- replace alerts
+
 - production readme
 - clean up drag and drop
 - high score in local storage

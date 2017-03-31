@@ -5,22 +5,31 @@ class Timer {
   }
 
   startTimer(){
+    this.counting = true;
     this.countdown();
   }
 
   countdown(){
     $(".timer").html(this.counter);
     let ticking = setInterval(() => {
-      this.counter--;
+      if (this.counting) {
+        this.counter--;
+      }
       $(".timer").html(this.counter);
       if (this.counter <= 0) {
         clearInterval(ticking);
-        alert("Game Over!");
+        document.getElementsByClassName('transparentModal')[0].style.display = "flex";
+          document.getElementById("gameOver").style.display = "flex";
+          clearInterval(ticking);
+          this.counting = false;
       }
     }, 1000);
 
   }
 
+  pauseTimer(){
+    this.counting = false;
+  }
 
   resetTimer(){
     this.counter = 60;
