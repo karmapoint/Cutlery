@@ -25,6 +25,33 @@ I used Forks, Spoons, and Knives to give the game a fun spin. Here are all of th
 
 * I added a short tutorial modal to teach players the basics of the game. I created my own modals with CSS and JavaScript which I used for a tutorial, an about screen, and notifications about successfully finding a set, submitting an incorrect set, and completing a game.
 
+## Sample Code
+
+#### Drag and drop implementation
+```
+let drake = dragula({
+  isContainer: (el) => {
+    return el.classList.contains('card_start') ||
+    el.classList.contains('target');
+  }
+}).on('drop',
+  (el) => {
+  potentialAttributes.push(el.className.slice(0, el.className.length - 11));
+  setTimeout(() => {checkForSet(potentialAttributes);},100);
+}
+);
+```
+
+#### Checking for sets
+I found a way to strip the attributes of a card from the card's class. Then I made an array of the 12 attributes (4 each from 3 cards).  I used Lodash to get counts for each individual attribute. Since card attributes must all be the same or all different, I realized if the count of any attribute totaled 2 that it would not be a set.
+
+```
+  const countAttributes = (items) => {
+    let counts = _.countBy(items, _.identity);
+    return !_.values(counts).includes(2);
+  };
+```
+
 ## Technologies:
  * HTML - Single page
  * CSS - Flexbox display
