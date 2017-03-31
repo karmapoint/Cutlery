@@ -1,6 +1,6 @@
 
-// const ASSET_PATH = 'https://karmapoint.github.io/Cutlery/';
-const ASSET_PATH = 'http://localhost:8080/';
+const ASSET_PATH = 'https://karmapoint.github.io/Cutlery/';
+// const ASSET_PATH = 'http://localhost:8080/';
 
 module.exports = {
   entry: "./frontend/index.js",

@@ -20,7 +20,9 @@ a:link, a:visited {
   color:white;
   text-decoration: none;
 }
-
+.tutorialContainer{
+  display:flex;
+}
 .wrapper{
   height:100%;
   display: flex;

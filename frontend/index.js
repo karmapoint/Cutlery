@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }).on('drop',
     (el) => {
     potentialAttributes.push(el.className.slice(0, el.className.length - 11));
-    checkForSet(potentialAttributes);
+    setTimeout(() => {checkForSet(potentialAttributes);},100);
   }
 );
 
@@ -52,6 +52,14 @@ document.addEventListener("DOMContentLoaded", function(){
           potentialAttributes =[];
         } else {
           alert("Not a set!");
+          potentialAttributes =[];
+          let failure1 = $("#target1").html();
+          $('.card_start:empty:first').html(failure1);
+          let failure2 = $("#target2").html();
+          $('.card_start:empty:first').html(failure2);
+          let failure3 = $("#target3").html();
+          $('.card_start:empty:first').html(failure3);
+          currentGame.currentDeck.clearTargets();
         }
     }
   };
