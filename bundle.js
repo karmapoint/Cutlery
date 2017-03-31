@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://karmapoint.github.io/Cutlery/";
+/******/ 	__webpack_require__.p = "http://localhost:8080/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 7);
@@ -18127,7 +18127,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   gameOverClose.onclick = () => {
     transparentModal.style.display = "none";
-    failMessage.style.display = "none";
+    gameOverMessage.style.display = "none";
   };
 
   window.onclick = (event) => {

@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   gameOverClose.onclick = () => {
     transparentModal.style.display = "none";
-    failMessage.style.display = "none";
+    gameOverMessage.style.display = "none";
   };
 
   window.onclick = (event) => {
