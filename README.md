@@ -1,178 +1,53 @@
-# Cutlery - Browser-based Javascript card game based on SET
 
 ![logo](dev_resources/cutlery_logo.png)
+# Cutlery - Browser-based Javascript card game based on SET
 
-## Background
+[Cutlery live link](https://karmapoint.github.io/Cutlery/)
 
-[Set](http://bit.ly/2nm7FtW) is an award-winning pattern recognition card game where players try to identify "sets" of three cards that meet a set of rules. Cutlery will utilize the basic premise of the game and create a version that is easy to play on web browsers (and hopefully tablets as well).
+**Cutlery** is a simple JavaScript game based on [Set](http://bit.ly/2nm7FtW), an award-winning pattern recognition card game.
 
-The deck is comprised of 81 unique cards that have four attributes:
+The goal is to identify sets of 3 cards where each of four attributes are either all the same, or all different.
 
- * Shape (fork, spoon, knife)
- * Color (red, yellow, blue)
- * Shading (solid, outline, pattern)
- * Number (one, two, three)
+I used Forks, Spoons, and Knives to give the game a fun spin. Here are all of the available attributes in the deck of 81 original cards (which I designed in photoshop):
 
- Game play involves shuffling the deck and dealing out 12 cards. The player will need to select three cards that they feel make up a "set" into the three target slots on the side of the screen. A set requires that the three cards meet one of the following conditions:
+* Shape (fork, spoon, knife)
+* Color (red, yellow, blue)
+* Shading (solid, outline, pattern)
+* Number (one, two, three)
 
- * All the same, or all different for shape.
- * All the same, or all different for color.
- * All the same, or all different for shading.
- * All the same, or all different for number.
+## Functionality
 
-The player will have a timer counting down from 1 minute to find a set. If they do this successfully, the selected cards are removed and three more are added to the board to replace them and the counter resets.  A score will tally how many sets they are able to make.
+* Users can drag and drop cards to the target area of the screen to identify a set. I utilized a small drag and drop JavaScript library called [Dragula](https://bevacqua.github.io/dragula/) to quickly implement the dragging and dropping and touch enablement.  
 
-Should no sets be visible on the board, the cards will automatically be shuffled and restarted.
+* The game does work on mobile and tablet devices, although the interface (nav menu and modals) has not been optimized for those mediums at this time.
 
-## Functionality & MVP
+* A timer provides a sense of urgency to the game play. It is set to 60 seconds and counts down until it reaches zero, or the player identifies a set, which will reset the counter to 60. The timer utilizes setInterval to tick down and has pause and reset functions.
 
-The set of initial features for this minimum viable product include the following:
+* I added a short tutorial modal to teach players the basics of the game. I created my own modals with CSS and JavaScript which I used for a tutorial, an about screen, and notifications about successfully finding a set, submitting an incorrect set, and completing a game.
 
-* Users can drag and drop cards to the target area of the screen to identify a set.
-* A timer will provide a sense of urgency to the game play. A bonus feature may involve creating levels where the duration of the timer is shortened each time.
-* A quick tutorial will introduce the rules of the game. Another bonus feature would be an "easy" mode where there are only 9 cards visible, but all of them are solid colors to make it easier to spot. After finding two sets, users would be directed to the main game play.
-
-* A production readme will describe the creation process and coding decisions.
+## Technologies:
+ * HTML - Single page
+ * CSS - Flexbox display
+ * JavaScript - Functionality
+ * jQuery - Assisted with some DOM manipulation
+ * Webpack - Consolidated my production JavaScript files
+ * Babel - Made code ES5 compatible.
+ * Dragula - Drag and drop functionality
+ * Lodash - Used to save time on some array methods
+ * Photoshop - designed logo and cards
 
 
 ## View
-Cutlery will be a single page app. There will be a header that stretches across the top of the screen at all times. It will display the logo (and possibly tagline) in the upper left corner. Simple navigation links will appear on the right side. The center of the header will be devoted to the timer and the score.
+Cutlery is a single page app. There is a header that stretches across the top of the screen at all times. It displays the logo  in the upper left corner. Simple navigation links appear on the right side. The center of the header is devoted to the timer and the score.
 
-The main content area of the screen will be mostly taken up by the board of 12 cards.  There will be a column on the far left of the screen displaying the three target areas where cards can be dropped to make a set.  Next to the targets will be a small area where the attributes of the targeted card will be displayed in text. (This may be scratched depending on usability needs and aesthetics).
+The main content area of the screen is taken up by the board of 15 cards.  There is a column on the far left of the screen displaying the three target areas where cards can be dropped to make a set.  
 
 ![wireframes](dev_resources/Cutlery-Wireframe.png)
 
-## Architecture
+![screenshot](dev_resources/cutleryScreenshot.png)
 
-* Vanilla JavaScript for primary logic.
-* jQuery to streamline DOM manipulation.
-* Dragula for touch-friendly drag and drop (they have a React version available)
-* Webpack and Babel for bundling the assorted scripts and converting ES5 to ES6.
+## Future Improvements
 
-The app will be composed of the following files/components:
-
-* Header
-  * Title
-  * Timer
-  * Score
-  * Nav
-* Content
-  * Target
-    * Dropzone (3)
-  * Board
-    * Cell (16)
-  * Tutorial (possibly modal)
-  * About (possibly modal)
-* Deck
-  * Card (81)
-
-
-## Timeline
-
-### Day 1
-  * Setup project folders, webpack, and get a basic React.js single page app set up with the header and content area.
-
-### Day 2
-  * Create deck and cards. Learn drag and drop. Have data start to pass back and forth between components.
-
-### Day 3
-  * Build out game logic, scoring, and timer.
-
-### Day 4
-  * Implement tutorial and other fine tuning.
-
-
-### BONUS
-  * Easy mode
-  * Progressing levels
-
-  ----
-### Cards:
-
-#### Blue
-- 1 Fork, solid
-- 1 Fork, pattern
-- 1 Fork, outline
-- 2 Fork, solid
-- 2 Fork, pattern
-- 2 Fork, outline
-- 3 Fork, solid
-- 3 Fork, pattern
-- 3 Fork, outline
-- 1 Spoon, solid
-- 1 Spoon, pattern
-- 1 Spoon, outline
-- 2 Spoon, solid
-- 2 Spoon, pattern
-- 2 Spoon, outline
-- 3 Spoon, solid
-- 3 Spoon, pattern
-- 3 Spoon, outline
-- 1 Knife, solid
-- 1 Knife, pattern
-- 1 Knife, outline
-- 2 Knife, solid
-- 2 Knife, pattern
-- 2 Knife, outline
-- 3 Knife, solid
-- 3 Knife, pattern
-- 3 Knife, outline
-
-#### Red
-- 1 Fork, solid
-- 1 Fork, pattern
-- 1 Fork, outline
-- 2 Fork, solid
-- 2 Fork, pattern
-- 2 Fork, outline
-- 3 Fork, solid
-- 3 Fork, pattern
-- 3 Fork, outline
-- 1 Spoon, solid
-- 1 Spoon, pattern
-- 1 Spoon, outline
-- 2 Spoon, solid
-- 2 Spoon, pattern
-- 2 Spoon, outline
-- 3 Spoon, solid
-- 3 Spoon, pattern
-- 3 Spoon, outline
-- 1 Knife, solid
-- 1 Knife, pattern
-- 1 Knife, outline
-- 2 Knife, solid
-- 2 Knife, pattern
-- 2 Knife, outline
-- 3 Knife, solid
-- 3 Knife, pattern
-- 3 Knife, outline
-
-
-#### Yellow
-- 1 Fork, solid
-- 1 Fork, pattern
-- 1 Fork, outline
-- 2 Fork, solid
-- 2 Fork, pattern
-- 2 Fork, outline
-- 3 Fork, solid
-- 3 Fork, pattern
-- 3 Fork, outline
-- 1 Spoon, solid
-- 1 Spoon, pattern
-- 1 Spoon, outline
-- 2 Spoon, solid
-- 2 Spoon, pattern
-- 2 Spoon, outline
-- 3 Spoon, solid
-- 3 Spoon, pattern
-- 3 Spoon, outline
-- 1 Knife, solid
-- 1 Knife, pattern
-- 1 Knife, outline
-- 2 Knife, solid
-- 2 Knife, pattern
-- 2 Knife, outline
-- 3 Knife, solid
-- 3 Knife, pattern
-- 3 Knife, outline
+* Save and display high score with local storage
+* Easy mode for improving the learning curve of the game itself.
+* Levels where the deck is shuffled and new cards are displayed after finding x sets.  The timer can be reduced to increase difficulty.
