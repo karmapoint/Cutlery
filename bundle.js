@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "https://karmapoint.github.io/Cutlery/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -129,7 +129,7 @@ class Deck {
   constructor(){
     this.cards = [];
     this.shuffledCards = this.generateDeck();
-    this.board = this.deal12(this.shuffledCards);
+    this.board = this.deal15(this.shuffledCards);
   }
 
   generateDeck(){
@@ -145,7 +145,7 @@ class Deck {
     return _.shuffle(this.cards);
   }
 
-  deal12(deck){
+  deal15(deck){
     let hand = [];
     for (let i = 0; i < 15; i++) {
       hand.push(deck.pop());
@@ -17284,7 +17284,7 @@ module.exports = Deck;
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(18)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(19)(module)))
 
 /***/ }),
 /* 4 */
@@ -17317,14 +17317,50 @@ module.exports = Game;
 
 /***/ }),
 /* 5 */
+/***/ (function(module, exports) {
+
+class Timer {
+  constructor(){
+    this.counter = 60;
+    this.counting = false;
+  }
+
+  startTimer(){
+    this.countdown();
+  }
+
+  countdown(){
+    $(".timer").html(this.counter);
+    let ticking = setInterval(() => {
+      this.counter--;
+      $(".timer").html(this.counter);
+      if (this.counter <= 0) {
+        clearInterval(ticking);
+        alert("Game Over!");
+      }
+    }, 1000);
+
+  }
+
+
+  resetTimer(){
+    this.counter = 60;
+  }
+
+}
+module.exports = Timer;
+
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var emitter = __webpack_require__(9);
-var crossvent = __webpack_require__(10);
-var classes = __webpack_require__(13);
+var emitter = __webpack_require__(10);
+var crossvent = __webpack_require__(11);
+var classes = __webpack_require__(14);
 var doc = document;
 var documentElement = doc.documentElement;
 
@@ -17932,38 +17968,47 @@ module.exports = dragula;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const Card = __webpack_require__(1);
 const Deck = __webpack_require__(2);
 const Game = __webpack_require__(4);
-// const Timer = require("./timer");
-const dragula = __webpack_require__(5);
+const Timer = __webpack_require__(5);
+const dragula = __webpack_require__(6);
 var _ = __webpack_require__(3);
 
 document.addEventListener("DOMContentLoaded", function(){
-  var currentGame = new Game();
+  let currentGame = new Game();
+  const currentTimer = new Timer();
+  $(".timer").html(currentTimer.counter);
+  let potentialAttributes = [];
+
 
 
   // New Game Button --------------------
   $( "#newGame").click(function() {
     currentGame.currentDeck.clearBoard();
     currentGame.resetScore();
-    new Game();
+    currentTimer.resetTimer();
+    currentTimer.startTimer();
+    currentGame = new Game();
+    potentialAttributes = [];
   });
 
-  let potentialAttributes = [];
+
 
   let drake = dragula({
     isContainer: (el) => {
       return el.classList.contains('card_start') ||
       el.classList.contains('target');
     }
-  }).on('drop', (el) => {
+  }).on('drop',
+    (el) => {
     potentialAttributes.push(el.className.slice(0, el.className.length - 11));
-    checkForSet(potentialAttributes);
-  });
+    setTimeout(() => {checkForSet(potentialAttributes);},100);
+  }
+);
 
 
   const checkForSet = (potential) => {
@@ -17977,6 +18022,17 @@ document.addEventListener("DOMContentLoaded", function(){
         });
         if (countAttributes(attributes) === true) {
           successfulSet();
+          potentialAttributes =[];
+        } else {
+          alert("Not a set!");
+          potentialAttributes =[];
+          let failure1 = $("#target1").html();
+          $('.card_start:empty:first').html(failure1);
+          let failure2 = $("#target2").html();
+          $('.card_start:empty:first').html(failure2);
+          let failure3 = $("#target3").html();
+          $('.card_start:empty:first').html(failure3);
+          currentGame.currentDeck.clearTargets();
         }
     }
   };
@@ -17989,30 +18045,35 @@ document.addEventListener("DOMContentLoaded", function(){
   const successfulSet = () => {
     currentGame.updateScore();
     alert("found one!");
+    currentTimer.resetTimer();
     currentGame.currentDeck.clearTargets();
     let newCards =
     currentGame.currentDeck.draw3(currentGame.currentDeck.shuffledCards);
+
   };
+
+
+
 
 }
 );
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = function atoa (a, n) { return Array.prototype.slice.call(a, n); }
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var ticky = __webpack_require__(16);
+var ticky = __webpack_require__(17);
 
 module.exports = function debounce (fn, args, ctx) {
   if (!fn) { return; }
@@ -18023,14 +18084,14 @@ module.exports = function debounce (fn, args, ctx) {
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var atoa = __webpack_require__(7);
-var debounce = __webpack_require__(8);
+var atoa = __webpack_require__(8);
+var debounce = __webpack_require__(9);
 
 module.exports = function emitter (thing, options) {
   var opts = options || {};
@@ -18084,14 +18145,14 @@ module.exports = function emitter (thing, options) {
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var customEvent = __webpack_require__(12);
-var eventmap = __webpack_require__(11);
+var customEvent = __webpack_require__(13);
+var eventmap = __webpack_require__(12);
 var doc = global.document;
 var addEvent = addEventEasy;
 var removeEvent = removeEventEasy;
@@ -18193,7 +18254,7 @@ function find (el, type, fn) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18214,7 +18275,7 @@ module.exports = eventmap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {
@@ -18269,7 +18330,7 @@ function CustomEvent (type, params) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18309,7 +18370,7 @@ module.exports = {
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -18495,7 +18556,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -18685,10 +18746,10 @@ process.umask = function() { return 0; };
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(14)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(15)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(setImmediate) {var si = typeof setImmediate === 'function', tick;
@@ -18699,10 +18760,10 @@ if (si) {
 }
 
 module.exports = tick;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18).setImmediate))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -18755,13 +18816,13 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(15);
+__webpack_require__(16);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
